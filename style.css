@@ -7,6 +7,10 @@
   font-weight: 400;
   font-style: normal;
 }
+/* dark 01 */
+.text-black{
+    color: #131313;
+}
 
 /* dark 02 */
 .text-grey{
@@ -15,7 +19,12 @@
 
 /* dark 03 */
 .text-light-grey{
-    color: 727272;
+    color: #727272;
+}
+
+/* orange  */
+.text-org{
+    color: #FF900E;
 }
 
 /* secondary color */
@@ -41,11 +50,6 @@
 .nav-link{
     text-decoration: none;
 }
-    
-
-.nav-links{
-
-}
 
 .nav-item{
    list-style: none;
@@ -59,8 +63,6 @@
 }
 
 /* banner related style */
-.banner{
-}
 
 
 .banner-content{
@@ -76,8 +78,6 @@
     font-weight: 700;
 }
 
-.banner-description{
-}
 
 .banner-btn{
     color: #ffffff;
@@ -92,6 +92,85 @@
 
 .banner-img{
     width: 100%;
+    padding-bottom: 60px;
 }
 
 
+
+
+
+
+
+/* second part about team Features */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 70px;
+}
+
+.teams{
+   align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.team-img-container{
+    margin: 20px;
+}
+
+.our-features{
+    margin-left: 73px;
+}
+
+.feature-tittle{
+    font-size: 2.8125rem;
+    font-weight: 600;
+}
+.light-weight{
+    font-size: 2.8125rem;
+    font-weight: 400 !important;
+}
+
+
+
+
+
+
+
+/* responsive media query */
+@media screen and (max-width: 576px){
+    .navbar, 
+    .nav-links, 
+    .display-flex{
+        flex-direction: column;
+    }
+.team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+}
+    
+.our-features{
+    margin: 4%;
+}
+}
+
+
+
+
+
+
+
+/* medium size screen */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .display-flex{
+        flex-direction: column;
+    }
+    
+
+}
