@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
@@ -94,8 +97,7 @@
     width: 100%;
     padding-bottom: 60px;
 }
-
-
+/* banner part complete */
 
 
 
@@ -137,14 +139,51 @@ main > section{
     font-size: 2.8125rem;
     font-weight: 400 !important;
 }
+/* second part about team Features complete */
 
 
 /* Features you will love & enjoy */
 .features02{
     display: flex;
+    gap: 150px;
 }
 
+.feature02-texts{
+    max-width: 560px;
+    gap: 50px;
+}
 
+.feature02-heading{
+    font-size:2.8rem;
+    font-weight: 700;
+}
+
+#feature02-heading-style {
+border-left: 5px solid #FF900E;
+padding-left:20px;
+}
+
+.feature02-card{
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 25px 15px;
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.06);
+    border-radius: 8;
+    margin-bottom: 20px;   
+}
+
+#exp-badge{
+    padding: 45px 42px;
+    font-size:1.45rem ;
+    font-weight: 500;
+    margin-top: -123px;
+    margin-left: -92px;
+}
+
+#exp-years{
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 
 /* Fact card section */
@@ -203,6 +242,16 @@ main > section{
     text-align: center;
 }
 
+.sponsor-tittle{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.sponsor-tittle-des{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 .sponsors-logo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -221,6 +270,26 @@ main > section{
 .sponsors-logo img:hover {
     filter: grayscale(0%);
 }
+/* sponsor section complete */
+
+
+/* footer section  */
+.copyright{
+    width: 1350px;
+    text-align: center;
+    background-color: rgba(255, 244, 231, 1);
+    padding:20px 20px;
+    margin: 170px auto 216px;
+    border-radius: 8;
+}
+
+.copyright-description{
+    
+    font-size: 20px;
+    font-weight: 400;
+    color: #424242; 
+}
+/* footer complete */
 
 
 
@@ -239,6 +308,25 @@ main > section{
 .our-features{
     margin: 4%;
 }
+
+
+/* feature02 section */
+.features02{
+    flex-direction: column;
+}
+
+.thumbnail-banner{
+    align-items: center;
+}
+
+.thumbnail-banner img{
+    width: 100%;
+}
+
+#exp-badge{
+    margin: 20px auto;
+}
+/* feature02 section end */
 
 /* fact section  */
 .fact-tittle-des{
@@ -265,6 +353,20 @@ main > section{
         margin-top: 40px;
         font-size: 2rem;
 }
+
+/* footer section */
+.copyright {
+        max-width: 100%;
+        margin: 60px 16px;
+        padding: 24px 16px;
+        border-radius: 6px;
+    }
+
+    .copyright-description {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    /* footer section complete */
 }
 
 
@@ -277,6 +379,28 @@ main > section{
     .display-flex{
         flex-direction: column;
     }
+
+
+/* features02 section */
+.features02{
+    flex-direction: column;
+}
+
+.thumbnail-banner{
+    align-items: center;
+}
+
+.thumbnail-banner img{
+    width: 100%;
+}
+
+#exp-badge{
+    
+    margin: 20px;
+    margin-left: 27%;
+}
+
+/* feature02 section end */
 /* fact section  */
     .fact-container{
     grid-template-columns: repeat(2, 1fr);
@@ -285,8 +409,8 @@ main > section{
 .fact-card{
      margin: 10px auto;
 }
-    /* fact section  */
-}
+    /* fact section end */
+
 
 
 /* sponsor section */
@@ -295,3 +419,17 @@ main > section{
         gap: 30px;
 }
 
+/* footer section */
+.copyright {
+        max-width: 90%;
+        margin: 120px auto 160px;
+        padding: 32px;
+        border-radius: 8px;
+    }
+
+    .copyright-description {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    /* footer section complete */
+}
